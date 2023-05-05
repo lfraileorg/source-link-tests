@@ -1,8 +1,8 @@
 ﻿namespace Hello.World.Lfraile
 {
-    public static class Salute
+    public class Salute
     {
-        public static string You(string you)
+        public string You(string you)
         {
             return $"Hello {you}";
         }
