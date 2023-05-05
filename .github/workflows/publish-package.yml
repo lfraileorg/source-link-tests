@@ -39,4 +39,4 @@ jobs:
           accountName: lfrailepublic
           # The Azure DevOps Personal Access Token (PAT) that has permission to publish symbols
           personalAccessToken: ${{ secrets.PAT_AZDO }}
-          searchPattern: Hello.World.Lfraile/Hello.World.Lfraile/output/*.pdb
+          searchPattern: '**/Hello.World.Lfraile/output/*.pdb'
