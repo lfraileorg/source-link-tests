@@ -14,7 +14,7 @@ jobs:
           # Optional SDK version(s) to use. If not provided, will install global.json version when available. Examples: 2.2.104, 3.1, 3.1.x, 3.x
           dotnet-version: 6.x
       - run: |
-          ls
+        working-directory: ./Hello.World.Lfraile
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:          
