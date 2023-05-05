@@ -15,8 +15,6 @@ jobs:
           dotnet-version: 6.x
       - run: |
           ls
-          # dotnet build -o ./output
-        # working-directory: Hello.World.Lfraile
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:          
