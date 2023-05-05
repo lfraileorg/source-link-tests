@@ -1,5 +1,8 @@
 name: Publish package
 
+defaults:
+  run:
+    working-directory: Hello.World.Lfraile/Hello.World.Lfraile
   
 on:
   workflow_dispatch:
@@ -18,7 +21,6 @@ jobs:
           dotnet-version: 6.x
       - run: |
           dotnet build -c Release -o ./output
-        working-directory: Hello.World.Lfraile/Hello.World.Lfraile
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:          
