@@ -17,13 +17,13 @@
 	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <Version>3.8.7</Version>
+	  <Version>3.8.8</Version>
 	  
   </PropertyGroup>
-<ItemGroup>
+<!-- ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-</ItemGroup>
+</ItemGroup -->
 </Project>
