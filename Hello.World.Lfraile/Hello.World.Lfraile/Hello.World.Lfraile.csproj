@@ -9,15 +9,15 @@
 	  <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
 	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
 
-	  <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
-	  <EmbedUntrackedSources>true</EmbedUntrackedSources>
+	  <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB
+	  <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
 
 	  <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
-	  <IncludeSymbols>true</IncludeSymbols>
-	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-
+	  <!-- <IncludeSymbols>true</IncludeSymbols> -->
+	
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <Version>3.8.9</Version>
+    
+	  <Version>3.9.0</Version>
 	  
   </PropertyGroup>
 <ItemGroup>
