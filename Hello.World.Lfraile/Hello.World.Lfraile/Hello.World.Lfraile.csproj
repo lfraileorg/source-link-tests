@@ -18,16 +18,16 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <!-- <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder> -->
     
-	  <Version>4.0.2</Version>
+	  <Version>4.0.3</Version>
 
     <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
     <!-- <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
 	  
   </PropertyGroup>
   
-  <!-- <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-  </PropertyGroup> -->
+  </PropertyGroup>
 
 <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
