@@ -22,7 +22,7 @@ jobs:
       
       - run: |
           dotnet build -c Release 
-          dotnet pack  -o ./output        
+          dotnet pack -o ./output        
       
       - run: |
           dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/lfraileorg/index.json"
