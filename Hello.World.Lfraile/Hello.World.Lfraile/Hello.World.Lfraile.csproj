@@ -16,12 +16,12 @@
 	  <!-- <IncludeSymbols>true</IncludeSymbols> -->
 	
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <!-- <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder> -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     
-	  <Version>4.0.3</Version>
+	  <Version>4.0.4</Version>
 
     <!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
-    <!-- <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
 	  
   </PropertyGroup>
   
