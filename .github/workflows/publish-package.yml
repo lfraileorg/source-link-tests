@@ -21,8 +21,8 @@ jobs:
           dotnet-version: 6.x
       
       - run: |
-          dotnet build -c Release -o ./output_bin
-          dotnet pack -o ./output        
+          dotnet build -c Release -o ./output
+          # dotnet pack -o ./output        
       
       - run: |
           dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/lfraileorg/index.json"
@@ -33,4 +33,4 @@ jobs:
         with:      
           accountName: lfrailepublic          
           personalAccessToken: ${{ secrets.PAT_AZDO }}
-          searchPattern: '**/Hello.World.Lfraile/output_bin/*.pdb'
+          searchPattern: '**/Hello.World.Lfraile/output/*.pdb'
