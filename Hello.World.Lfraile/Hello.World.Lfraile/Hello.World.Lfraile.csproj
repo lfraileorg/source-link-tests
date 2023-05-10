@@ -15,7 +15,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 
-		<Version>4.0.6</Version>
+		<Version>4.0.7</Version>
 
 		<!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -27,7 +27,7 @@
 	</PropertyGroup>
 	
 	<PropertyGroup >
-		<DebugType>Portable</DebugType>
+		<DebugType>Embedded</DebugType>
 	</PropertyGroup>
 	
 	<ItemGroup>
