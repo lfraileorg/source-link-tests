@@ -13,17 +13,18 @@
 		 <IncludeSymbols>true</IncludeSymbols> 
 
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<!-- <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder> -->
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 
-		<Version>4.0.11</Version>
+		<Version>4.0.12</Version>
 
 		<!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
-		<!-- <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+		<DebugType>Embedded</DebugType>
 	</PropertyGroup>
 	
 	<!-- <PropertyGroup >

@@ -28,9 +28,9 @@ jobs:
           dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/lfraileorg/index.json"
           dotnet nuget push "./output/*.nupkg" --source "github" --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }}          
           
-      - name: Publish Symbols
-        uses: microsoft/action-publish-symbols@v2.1.6
-        with:      
-          accountName: lfrailepublic          
-          personalAccessToken: ${{ secrets.PAT_AZDO }}
-          searchPattern: '**/Hello.World.Lfraile/output/*.pdb'
+      # - name: Publish Symbols
+      #   uses: microsoft/action-publish-symbols@v2.1.6
+      #   with:      
+      #     accountName: lfrailepublic          
+      #     personalAccessToken: ${{ secrets.PAT_AZDO }}
+      #     searchPattern: '**/Hello.World.Lfraile/output/*.pdb'
