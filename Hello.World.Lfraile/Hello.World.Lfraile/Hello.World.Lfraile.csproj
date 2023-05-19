@@ -15,7 +15,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 
-		<Version>4.0.15</Version>
+		<Version>4.0.16</Version>
 
 		<!-- Optional: Embed source files that are not tracked by the source control manager in the PDB -->
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -24,7 +24,7 @@
 
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-		<!-- <DebugType>Embedded</DebugType> -->
+		<DebugType>Embedded</DebugType>
 	</PropertyGroup>
 	
 	<!-- <PropertyGroup >
