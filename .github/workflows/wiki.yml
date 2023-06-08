@@ -1,0 +1,16 @@
+name: Wiki publish
+
+on:
+  gollum:
+  workflow_dispatch:    
+  
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo ${{ github.server_url }}/${{github.repository}}.wiki.git
+    - name: Checkout
+      uses: actions/checkout@v3.5.2
+      with:
+        repository: ${{ github.server_url }}/${{github.repository}}.wiki.git
