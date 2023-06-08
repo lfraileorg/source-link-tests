@@ -3,6 +3,8 @@ name: Wiki publish
 on:
   gollum:
   workflow_dispatch:    
+  push:
+    paths: .github/workflows/wiki.yml
   
 jobs:
   publish:
