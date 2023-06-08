@@ -12,6 +12,6 @@ jobs:
     steps:
     - run: |
         echo ${{ github.server_url }}/${{github.repository}}.wiki.git
-    - name: Checkout
-      uses: actions/checkout@v3.5.2   
-    - run: ls
+    - run: |
+        git clone ${{ github.server_url }}/${{github.repository}}.wiki.git
+        ls
